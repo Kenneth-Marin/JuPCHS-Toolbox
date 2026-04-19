@@ -14,14 +14,13 @@ JuPCHS is a package for simulation, analysis and control port-controlled Hamilto
   
 ## Geting started
 
-**¡¡¡¡¡¡¡¡ REVISAR !!!!!!!!**
-
 ### Installation
 
-To install JuPCHS.jl, you can simply use Julia’s built-in package manager. Install it directly from the GitHub repository:
+To install `JuPCHS`, you can simply use Julia’s built-in package manager. Install it directly from the GitHub repository by running the following commands in the Julia REPL:
 
+    julia
     using Pkg
-    Pkg.add(url="https://github.com/Kencho05/JuPCHS-Toolbox/JuPCHS.jl")
+    Pkg.add(url="https://github.com/Kenneth-Marin/JuPCHS-Toolbox")
 
 
 ### Quick Start
@@ -36,8 +35,8 @@ where: $M$ is the inertia, $\omega_B$ the nominal frequency, $p_m$ the mechanica
 
 The dynamics of this system can be written under the framework of JuPCHS by defining state variables: $x=[x_\omega,x_\delta]$ with $x_\omega=M\omega$ and $x_\delta = \delta$. We only require to define $J$,$R$,$H$ and $\nabla H$ as given below:
 
-    include("scr/JuPCHS.jl")
-    using .JuPCHS
+    julia
+    using JuPCHS
     
     Ms = 30
     wB = 2*pi*60

@@ -384,6 +384,7 @@ uuid = "aacddb02-875f-59d6-b918-886e6ef4fbf8"
 version = "3.1.5+0"
 
 [[deps.JuPCHS]]
+deps = ["DataFrames", "ForwardDiff", "LinearAlgebra", "Plots"]
 path = "."
 uuid = "f3bb7950-ddb9-4911-bee8-74d56c1a08cc"
 version = "0.1.0"
