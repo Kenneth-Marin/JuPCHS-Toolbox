@@ -35,7 +35,6 @@ where: $M$ is the inertia, $\omega_B$ the nominal frequency, $p_m$ the mechanica
 
 The dynamics of this system can be written under the framework of JuPCHS by defining state variables: $x=[x_\omega,x_\delta]$ with $x_\omega=M\omega$ and $x_\delta = \delta$. We only require to define $J$,$R$,$H$ and $\nabla H$ as given below:
 
-    julia
     using JuPCHS
     
     Ms = 30
